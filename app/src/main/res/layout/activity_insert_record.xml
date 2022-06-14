@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsertRecordActivity">
+
+    <TextView
+        android:id="@+id/insertRecordTextView"
+        android:layout_width="412dp"
+        android:layout_height="59dp"
+        android:gravity="center"
+        android:text="Insert Record"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewSongTitle"
+        android:layout_width="110dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="48dp"
+        android:text="SongTitle:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/insertRecordTextView" />
+
+    <TextView
+        android:id="@+id/textViewArtist"
+        android:layout_width="110dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="236dp"
+        android:text="Artist:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/insertRecordTextView" />
+
+    <TextView
+        android:id="@+id/textViewAlbum"
+        android:layout_width="110dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="336dp"
+        android:text="Album:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/insertRecordTextView" />
+
+    <TextView
+        android:id="@+id/textViewYear"
+        android:layout_width="110dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="140dp"
+        android:text="Year:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/insertRecordTextView" />
+
+    <EditText
+        android:id="@+id/editTextSongTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="song title"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textViewSongTitle"
+        app:layout_constraintTop_toBottomOf="@+id/insertRecordTextView" />
+
+    <EditText
+        android:id="@+id/editTextYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="year"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textViewSongTitle"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSongTitle" />
+
+    <EditText
+        android:id="@+id/editTextArtist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="artist"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textViewSongTitle"
+        app:layout_constraintTop_toBottomOf="@+id/editTextYear" />
+
+    <EditText
+        android:id="@+id/editTextAlbum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:hint="album"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textViewSongTitle"
+        app:layout_constraintTop_toBottomOf="@+id/editTextArtist" />
+
+    <Button
+        android:id="@+id/insertRecordButton"
+        android:layout_width="145dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="92dp"
+        android:text="Insert"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAlbum" />
+
+    <Button
+        android:id="@+id/cancelInsertButton"
+        android:layout_width="145dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="92dp"
+        android:text="Cancel"
+        app:layout_constraintStart_toEndOf="@+id/insertRecordButton"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAlbum" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
